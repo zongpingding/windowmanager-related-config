@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", " " };
+static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", " " };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -72,6 +72,7 @@ static const char *Appstart[]  	= { "/home/zpd/Downloads/dwm-config/dwm/Appstart
 static const char *nautilus[]  	= { "/home/zpd/Downloads/dwm-config/dwm/nautilus.sh", NULL };
 static const char *clion[]  	= { "/home/zpd/Downloads/dwm-config/dwm/clion.sh", NULL };
 static const char *pycharm[]  	= { "/home/zpd/Downloads/dwm-config/dwm/pycharm.sh", NULL };
+static const char *screenshot[] = { "/home/zpd/Downloads/dwm-config/dwm/screenshot.sh", NULL };
 
 
 
@@ -86,6 +87,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = nautilus } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = clion } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = pycharm } },
+	{ MODKEY,                       XK_F11,    spawn,          {.v = screenshot} },
 	{ MODKEY,                       XK_Up,     spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
